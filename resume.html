@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aaron's Resume</title>
+    <link rel="stylesheet" href="./aa.css">
+    <script src="//at.alicdn.com/t/font_1280948_6wjysc3q0cq.js"></script>
+    <style type="text/css">
+      .icon {
+         width: 1em; height: 1em;
+         vertical-align: -0.15em;
+         fill: currentColor;
+         overflow: hidden;
+      }
+  </style>
+  </head>
+  <body>
+    <div class="topNavBar">
+      <div class="topNavBar-inner clearfix">
+        <a class="logo" href="#" alt="logo" style="float: left; ">
+          <span class="ax">AX</span><span class="card">card</span>
+        </a>
+          <nav style="float: right;">
+            <ul class="clearfix">
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">SKILLS</a></li>
+              <li><a href="#">PORTFOLIO</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">CALENDAR</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">OTHER</a></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+    <div class="banner" >
+      <div class="mask"></div>
+    </div>
+    <main>
+      <div class="userCard">
+        <div class="pictureAndText clearfix">
+          <div class="picture">
+            <img src="./img/avatar.PNG" width=299 height=347 alt="头像">
+          </div>
+          <div class="text">
+              <span class="welcome">Hello
+                <span class="triangle"></span>
+              </span>
+              <h1>I'm <b>Aaron Xu</b></h1>
+              <p>Front-End Developer</p>
+              <hr>
+              <dl>
+                <dt>AGE</dt>
+                <dd>26</dd>
+                <dt>CITY</dt>
+                <dd>Shanghai</dd>
+                <dt>E-MAIL</dt>
+                <dd>sgyxu10@hotmail.com</dd>
+                <dt>PHONE</dt>
+                <dd>15988616588</dd>
+              </dl>
+          </div>
+        </div>
+        <footer class="media">
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-ttww"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-weibo"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-tian7_facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-github"></use>
+            </svg>
+          </a>
+          <a href="#">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-jirengulogojichu1"></use>
+              </svg>
+            </a>
+        </footer>
+      </div>
+
+      <p class="downloadResume-wrapper">
+        <a class="downloadResume" href="./download-demo.pdf" target="_blank" download>
+          DOWNLOAD RESUME
+        </a>
+      </p>
+
+      
+
+      <p class="selfIntroduction">
+      </p>
+
+    </main>
+    <section class="skills">
+      <h2>SKILLS</h2>
+      <ol class="clearfix">
+        <li>
+          <h3>
+            HTML 5 &amp; CSS 3
+            <span class="barValue">80%</span>
+          </h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 80%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>
+            JavaScript
+            <span class="barValue">70%</span>
+          </h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 70%"></div>
+          </div>
+          </li>
+        <li>
+          <h3>
+            jQuery
+            <span class="barValue">72%</span>
+          </h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 72%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>
+            Vue
+            <span class="barValue">65%</span>
+          </h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 65%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>
+            React
+            <span class="barValue">60%</span>
+          </h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 60%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>
+            HTTP
+            <span class="barValue">90%</span>
+          </h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 90%"></div>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <section class="portfolio">
+      <h2>PORTFOLIOS</h2>
+      <nav>
+        <ol class="clearfix">
+          <li id="portfolio1">ALL</li>
+          <li id="portfolio2">JAVASCRIPT</li>
+          <li id="portfolio3">RUBY/RAILS</li>
+          <li id="portfolio4">NODE.JS</li>
+        </ol>
+        <div id="portfolioBar" class="bar state-1">
+          <div class="bar-inner"></div>
+        </div>
+      </nav>
+
+      <script>
+         portfolio1.onclick = function(){
+           portfolioBar.className='bar state-1'
+         }
+         portfolio2.onclick = function(){
+           portfolioBar.className='bar state-2'
+         }
+         portfolio3.onclick = function(){
+           portfolioBar.className='bar state-3'
+         }
+         portfolio4.onclick = function(){
+           portfolioBar.className='bar state-4'
+         }
+      </script>       
+
+
+      <div class="works" style="height: 576px;">
+        <div class="big" style="top:0; left: 0;">
+          <img id="work1" src="./img/1.jpg" alt="Work1">
+        </div>
+        <div class="small" style="top: 0; left: 644px;">
+          <img id="work2" src="./img/2.jpg" alt="Work2">
+        </div>
+        <div class="small" style="top: 298px; left: 644px;">
+          <img id="work3" src="./img/3.jpg" alt="Work3">
+        </div>
+      </div>
+
+    </section>
+  </body>
+</html>
